@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+// import corpcommentImg from "@/public/corpcomment.png";
+// import rmtdevImg from "@/public/rmtdev.png";
+// import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
    {
@@ -66,21 +66,21 @@ export const projectsData = [
       description:
          "a modern real-time messaging application built using the MERN stack. It provides instant message delivery, user authentication, and responsive UI components.",
       tags: ["React", "Express", "MongoDB", "Node"],
-      imageUrl: corpcommentImg,
+      //imageUrl: corpcommentImg,
    },
    {
       title: "Ticketing Application",
       description:
          "A microservices-based platform designed to facilitate the management and sale of tickets for various events. It leverages modern technologies to provide a scalable, resilient, and efficient solution for event organizers and customers alike.",
       tags: ["JavaScript","TypeScript", "Next.js","kubernetes", "Docker", "Skaffold", "Node.js","Express", "Jest", "Mongodb"],
-      imageUrl: rmtdevImg,
+      //imageUrl: rmtdevImg,
    },
    {
       title: "Movie-Server",
       description:
          "A server created to handle the functional of a movie application. It contains database for user and the movie. User can login or signup and perform a CURD operation with the movie database.",
       tags: ["JavaScript","Node.js", "Express", "Mongoose", "Jsonwebtoken"],
-      imageUrl: wordanalyticsImg,
+      //imageUrl: wordanalyticsImg,
    },
 ] as const;
 
