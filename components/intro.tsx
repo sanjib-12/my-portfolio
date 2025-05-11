@@ -55,10 +55,9 @@ export default function Intro() {
             animate={{ opacity: 1, y: 0 }}
          >
             Hello, I'm<span className="font-bold"> Sanjib.</span> I'm a{" "}
-            <span className="font-bold">full-stack developer</span> with{" "}
-            <span className="font-bold">one years</span> of experience. I enjoy
-            building <span className="italic">sites & apps</span>. My focus is{" "}
-            <span className="font-bold">MERN-stack</span>.
+            <span className="font-bold">full-stack developer</span> with a{" "}
+            <span className="font-bold">year</span> of hand-on experience crafting seamless web experiences. I enjoy
+            building <span className="italic">sites & apps</span> and I specialize in building responsive, high performance application using modern <span className="font-bold">javaScript</span> technologies and intuitive design principles.
          </motion.p>
 
          <motion.div
