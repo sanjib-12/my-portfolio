@@ -70,14 +70,14 @@ export default function Intro() {
          >
             <Link
                href="#contact"
-               className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 haver:bg-gray-950 active:scale-105 transition"
+               className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus-visible:scale-110 hover:scale-110 haver:bg-gray-950 active:scale-105 transition"
             >
                Contact me here{" "}
                <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
             </Link>
 
             <a
-               className="group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer border border-black/10"
+               className="group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus-visible:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer border border-black/10"
                href="/Resume.pdf"
                target="_blank"
             >
@@ -86,7 +86,7 @@ export default function Intro() {
             </a>
 
             <a
-               className="bg-white  p-4 text-gray-700 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border border-black/10"
+               className="bg-white  p-4 text-gray-700 flex items-center gap-2 rounded-full focus-visible:scale-[1.15] hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border border-black/10"
                href="https://www.linkedin.com/in/sanjib-barakoti/"
                target="_blank"
             >
@@ -94,7 +94,7 @@ export default function Intro() {
             </a>
             
             <a
-               className="bg-white  p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border border-black/10 "
+               className="bg-white  p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus-visible:scale-[1.15] hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border border-black/10 "
                href="https://github.com/sanjib-12"
                target="_blank"
             >

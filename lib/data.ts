@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-// import corpcommentImg from "@/public/corpcomment.png";
-// import rmtdevImg from "@/public/rmtdev.png";
-// import wordanalyticsImg from "@/public/wordanalytics.png";
+import cinemaImg from "@/public/cinema.jpg";
+import chatImg from "@/public/chat.jpg";
+import ticketImg from "@/public/ticket.jpg";
 
 export const links = [
    {
@@ -44,7 +44,7 @@ export const experiencesData = [
    },
    {
       title: "Software Developer",
-      location: "Citizen Infotech Pvt.Ltd, Kathmandus, Nepal",
+      location: "Citizen Infotech Pvt.Ltd, Kathmandu, Nepal",
       description:
          "Over year of experience experience on working on MERN-stack projects. for detail, Please refer the resume.",
       icon: React.createElement(CgWorkAlt),
@@ -65,22 +65,29 @@ export const projectsData = [
       title: "QuickChat",
       description:
          "a modern real-time messaging application built using the MERN stack. It provides instant message delivery, user authentication, and responsive UI components.",
-      tags: ["React", "Express", "MongoDB", "Node"],
-      //imageUrl: corpcommentImg,
+      tags: ["React", "Express", "MongoDB", "Node","Redux"],
+      imageUrl: chatImg,
+      githubUrl: 'https://github.com/sanjib-12/QuickChat',
+      webpageUrl: 'www.google.com',
+
    },
    {
       title: "Ticketing Application",
       description:
-         "A microservices-based platform designed to facilitate the management and sale of tickets for various events. It leverages modern technologies to provide a scalable, resilient, and efficient solution for event organizers and customers alike.",
-      tags: ["JavaScript","TypeScript", "Next.js","kubernetes", "Docker", "Skaffold", "Node.js","Express", "Jest", "Mongodb"],
-      //imageUrl: rmtdevImg,
+         "A microservices-based platform designed to facilitate the management and sale of tickets. It leverages modern technologies to provide a scalable, resilient, and efficient solution for event organizers and customers alike.",
+      tags: ["JS","TS", "Next.js","kubernetes", "Docker", "Node.js","Express", "Jest", "Mongodb"],
+      imageUrl: ticketImg,
+      githubUrl: 'https://github.com/sanjib-12/ticketing',
+      webpageUrl: 'www.google.com',
    },
    {
       title: "Movie-Server",
       description:
          "A server created to handle the functional of a movie application. It contains database for user and the movie. User can login or signup and perform a CURD operation with the movie database.",
       tags: ["JavaScript","Node.js", "Express", "Mongoose", "Jsonwebtoken"],
-      //imageUrl: wordanalyticsImg,
+      imageUrl: cinemaImg,
+      githubUrl: 'https://github.com/sanjib-12/Movie-Server',
+      webpageUrl:''
    },
 ] as const;
 
