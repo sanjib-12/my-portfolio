@@ -4,6 +4,7 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { animate, motion } from "framer-motion";
+import { SiReact } from "react-icons/si";
 
 const fadeInAnimationsVariants = {
    initial: {
@@ -31,9 +32,10 @@ export default function Skills() {
          <SectionHeading>My Skills</SectionHeading>
          <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
             {skillsData.map((skill, index) => {
+               const {name, Icon, color} = skill;
                return (
                   <motion.li
-                     className="bg-white border border-black/[0.1] rounded-3xl px-5 py-3"
+                     className="bg-white border border-black/[0.1] rounded-3xl px-5 py-3 flex gap-2"
                      key={index}
                      variants={fadeInAnimationsVariants}
                      initial="initial"
@@ -41,7 +43,8 @@ export default function Skills() {
                      viewport={{once:true}}
                      custom= {index}
                   >
-                     {skill}
+                     <Icon size={30} color={color} />
+                     {name}
                      
                   </motion.li>
                );
