@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useActionState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
@@ -9,13 +9,18 @@ import { BsArrowRight, BsDownload, BsLinkedin } from "react-icons/bs";
 import profilePic from "@/public/avatar.png";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
-
-   const{ref} = useSectionInView('Home',0.5);
+   const { ref } = useSectionInView("Home", 0.5);
+   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
    return (
-      <section ref={ref} className="max-w-[50rem] text-center sm:mb-0 scroll-mt-36" id="home">
+      <section
+         ref={ref}
+         className="max-w-[50rem] text-center sm:mb-0 scroll-mt-36"
+         id="home"
+      >
          <div className="flex items-center justify-center">
             <div className="relative">
                <motion.div
@@ -60,8 +65,12 @@ export default function Intro() {
          >
             Hello, I'm<span className="font-bold"> Sanjib.</span> I'm a{" "}
             <span className="font-bold">full-stack developer</span> with a{" "}
-            <span className="font-bold">year</span> of hand-on experience crafting seamless web experiences. I enjoy
-            building <span className="italic">sites & apps</span> and I specialize in building responsive, high performance application using modern <span className="font-bold">javaScript</span> technologies and intuitive design principles.
+            <span className="font-bold">year</span> of hand-on experience
+            crafting seamless web experiences. I enjoy building{" "}
+            <span className="italic">sites & apps</span> and I specialize in
+            building responsive, high performance application using modern{" "}
+            <span className="font-bold">javaScript</span> technologies and
+            intuitive design principles.
          </motion.h1>
 
          <motion.div
@@ -75,13 +84,17 @@ export default function Intro() {
             <Link
                href="#contact"
                className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus-visible:scale-110 hover:scale-110 haver:bg-gray-950 active:scale-105 transition"
+               onClick={() => {
+                  setActiveSection("Contact");
+                  setTimeOfLastClick(Date.now());
+               }}
             >
                Contact me here{" "}
                <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
             </Link>
 
             <a
-               className="group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus-visible:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer border border-black/10"
+               className="group bg-white  px-7 py-3 flex items-center gap-2 rounded-full outline-none focus-visible:scale-110 hover:scale-110  active:scale-105 transition cursor-pointer borderBlack"
                href="/Resume.pdf"
                target="_blank"
             >
@@ -90,15 +103,15 @@ export default function Intro() {
             </a>
 
             <a
-               className="bg-white  p-4 text-gray-700 flex items-center gap-2 rounded-full focus-visible:scale-[1.15] hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border border-black/10"
+               className="bg-white  p-4 text-gray-700 flex items-center gap-2 rounded-full focus-visible:scale-[1.15] hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer borderBlack"
                href="https://www.linkedin.com/in/sanjib-barakoti/"
                target="_blank"
             >
                <BsLinkedin />
             </a>
-            
+
             <a
-               className="bg-white  p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus-visible:scale-[1.15] hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer border border-black/10 "
+               className="bg-white  p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus-visible:scale-[1.15] hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer borderBlack "
                href="https://github.com/sanjib-12"
                target="_blank"
             >

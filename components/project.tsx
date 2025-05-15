@@ -71,7 +71,7 @@ export default function Project({
                               );
                            }, 300); // Delay in milliseconds
                         }}
-                        className="flex-1 bg-gray-900 text-white text-center py-2 px-4 rounded-3xl hover:bg-gray-800  flex items-center justify-center gap-2 outline-none focus-visible:scale-105 hover:scale-105 active:scale-95 transition cursor-pointer border border-black/10"
+                        className="flex-1 bg-gray-900 text-white text-center py-2 px-4 rounded-3xl hover:bg-gray-800  flex items-center justify-center gap-2 outline-none focus-visible:scale-105 hover:scale-105 active:scale-95 transition cursor-pointer borderBlack"
                      >
                         <FaGithub size={16} /> GitHub Repo
                      </a>
@@ -91,7 +91,7 @@ export default function Project({
                               );
                            }, 300); // Delay in milliseconds
                         }}
-                        className="flex-1 bg-gray-900 text-white text-center py-2 px-4 rounded-3xl hover:bg-gray-800  flex items-center justify-center gap-2 outline-none focus-visible:scale-110 hover:scale-110  active:scale-95 transition cursor-pointer border border-black/10"
+                        className="flex-1 bg-gray-900 text-white text-center py-2 px-4 rounded-3xl hover:bg-gray-800  flex items-center justify-center gap-2 outline-none focus-visible:scale-110 hover:scale-110  active:scale-95 transition cursor-pointer borderBlack"
                      >
                         <FaExternalLinkAlt size={16} /> Explore More
                      </a>
