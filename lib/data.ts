@@ -53,16 +53,16 @@ export const links = [
       hash: "#about",
    },
    {
-      name: "Projects",
-      hash: "#projects",
-   },
-   {
       name: "Skills",
       hash: "#skills",
    },
    {
       name: "Experience",
       hash: "#experience",
+   },
+   {
+      name: "Projects",
+      hash: "#projects",
    },
    {
       name: "Contact",
@@ -99,8 +99,8 @@ export const projectsData = [
    {
       title: "QuickChat",
       description:
-         "a modern real-time messaging application built using the MERN stack. It provides instant message delivery, user authentication, and responsive UI components.",
-      tags: ["React", "Express", "MongoDB", "Node", "Redux"],
+         "A modern real-time messaging application built using the MERN stack. It provides instant message delivery, user authentication, and responsive UI components.",
+      tags: ["React", "Express", "MongoDB", "Node", "Redux", "JWT", "Stock.io"],
       imageUrl: chatImg,
       githubUrl: "https://github.com/sanjib-12/QuickChat",
       webpageUrl: "www.google.com",
@@ -110,15 +110,15 @@ export const projectsData = [
       description:
          "A microservices-based platform designed to facilitate the management and sale of tickets. It leverages modern technologies to provide a scalable, resilient, and efficient solution for event organizers and customers alike.",
       tags: [
-         "JS",
-         "TS",
          "Next.js",
-         "kubernetes",
-         "Docker",
+         "React",
+         "TypeScript",
          "Node.js",
          "Express",
          "Jest",
          "Mongodb",
+         "kubernetes",
+         "Docker",
       ],
       imageUrl: ticketImg,
       githubUrl: "https://github.com/sanjib-12/ticketing",

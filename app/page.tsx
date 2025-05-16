@@ -11,9 +11,13 @@ export default function Home() {
       <Intro/>
       <SectionDivider/>
       <About/>
-      <Project/>
+      <SectionDivider/>
       <Skills/>
+      <SectionDivider/>
       <Experience/>
+      <SectionDivider/>
+      <Project/>
+      <SectionDivider/>
       <Contact/>
     </main>
   )
