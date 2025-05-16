@@ -36,10 +36,10 @@ export default function Project({
          ref={ref}
          className="group mb-3 sm:mb-8 last:mb-0"
       >
-         <section className=" bg-gray-100 max-w-[50rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative md:h-[20rem]  hover:bg-gray-200 transition">
+         <section className=" bg-gray-100 max-w-[50rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative md:h-[20rem]  hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20 dark:text-white">
             <div className="pt-2 pb-5 px-5 sm:pl-5 sm:pr-2 sm:pt-5 md:max-w-[60%] flex flex-col md:justify-between h-full">
                <h3 className="text-2xl font-semibold text-center"> {title} </h3>
-               <p className="mt-2 mb-2 leading-relaxed text-gray-700 ">
+               <p className="mt-2 mb-2 leading-relaxed text-gray-700 dark:text-white/70">
                   {" "}
                   {description}{" "}
                </p>
@@ -47,7 +47,7 @@ export default function Project({
                <ul className="flex flex-wrap mt-2 mb-2 overflow gap-2 ">
                   {tags.map((tag, index) => (
                      <li
-                        className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+                        className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                         key={index}
                      >
                         {tag}
@@ -71,7 +71,7 @@ export default function Project({
                               );
                            }, 300); // Delay in milliseconds
                         }}
-                        className="flex-1 bg-gray-900 text-white text-center py-2 px-4 rounded-3xl hover:bg-gray-800  flex items-center justify-center gap-2 outline-none focus-visible:scale-105 hover:scale-105 active:scale-95 transition cursor-pointer borderBlack"
+                        className="flex-1 bg-gray-900 text-white text-center py-2 px-4 rounded-3xl hover:bg-gray-800  flex items-center justify-center gap-2 outline-none focus-visible:scale-105 hover:scale-105 active:scale-95 transition cursor-pointer borderBlack dark:text-white/70"
                      >
                         <FaGithub size={16} /> GitHub Repo
                      </a>
@@ -91,7 +91,7 @@ export default function Project({
                               );
                            }, 300); // Delay in milliseconds
                         }}
-                        className="flex-1 bg-gray-900 text-white text-center py-2 px-4 rounded-3xl hover:bg-gray-800  flex items-center justify-center gap-2 outline-none focus-visible:scale-110 hover:scale-110  active:scale-95 transition cursor-pointer borderBlack"
+                        className="flex-1 bg-gray-900 text-white text-center py-2 px-4 rounded-3xl hover:bg-gray-800  flex items-center justify-center gap-2 outline-none focus-visible:scale-110 hover:scale-110  active:scale-95 transition cursor-pointer borderBlack dark:text-white/70"
                      >
                         <FaExternalLinkAlt size={16} /> Explore More
                      </a>

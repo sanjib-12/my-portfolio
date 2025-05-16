@@ -76,7 +76,7 @@ export const experiencesData = [
       location: "Loyalist College, Toronto, ON",
       description: "Major: Computer Software and Database Development",
       icon: React.createElement(LuGraduationCap),
-      date: "2023 - 2024",
+      date: " 2023 - 2024 ",
    },
    {
       title: "Software Developer",
@@ -84,14 +84,14 @@ export const experiencesData = [
       description:
          "Over year of experience experience on working on MERN-stack projects. for detail, Please refer the resume.",
       icon: React.createElement(CgWorkAlt),
-      date: "2022",
+      date: " 2022 ",
    },
    {
       title: "Graduated, Bachelor in Engineering.",
       location: "Ramaiah Institute of Technology, Bangalore, India",
       description: "Major: Electronic and Communication",
       icon: React.createElement(LuGraduationCap),
-      date: "2017 - 2021",
+      date: " 2017 - 2021 ",
    },
 ] as const;
 
