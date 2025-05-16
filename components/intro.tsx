@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsDownload, BsLinkedin } from "react-icons/bs";
 
-import profilePic from "@/public/avatar.png";
+import profilePic from "@/public/avatar1.png";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -38,7 +38,7 @@ export default function Intro() {
                      height="192"
                      quality="95"
                      priority={true}
-                     className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+                     className="h-26 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl "
                   />
                </motion.div>
 
@@ -64,13 +64,10 @@ export default function Intro() {
             animate={{ opacity: 1, y: 0 }}
          >
             Hello, I'm<span className="font-bold"> Sanjib.</span> I'm a{" "}
-            <span className="font-bold">full-stack developer</span> with a{" "}
-            <span className="font-bold">year</span> of hand-on experience
-            crafting seamless web experiences. I enjoy building{" "}
-            <span className="italic">sites & apps</span> and I specialize in
-            building responsive, high performance application using modern{" "}
-            <span className="font-bold">javaScript</span> technologies and
-            intuitive design principles.
+            <span className="font-bold">full-stack developer</span> with a year
+            of hand-on experience crafting seamless web experiences. I enjoy
+            building <span className="italic">sites & apps</span>. Let's
+            collaborate to bring your next project to life!
          </motion.h1>
 
          <motion.div
@@ -107,14 +104,16 @@ export default function Intro() {
                href="https://www.linkedin.com/in/sanjib-barakoti/"
                target="_blank"
             >
+               <span className="sm:hidden dark:text-white/80  ">Linkedin</span>
                <BsLinkedin />
             </a>
 
             <a
-               className="bg-white  p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus-visible:scale-[1.15] hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+               className="bg-white  p-4 text-gray-700 flex items-center gap-2 rounded-full focus-visible:scale-[1.15] hover:scale-[1.15]  hover:text-gray-950 active:scale-[1.15] transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
                href="https://github.com/sanjib-12"
                target="_blank"
             >
+               <span className="sm:hidden dark:text-white/80 ">Github</span>
                <FaGithubSquare />
             </a>
          </motion.div>
