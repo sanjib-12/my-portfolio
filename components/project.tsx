@@ -7,7 +7,15 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 
 import { projectsData } from "@/lib/data";
 
-type ProjectProps = (typeof projectsData)[number];
+// type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = {
+  title: string;
+  description: string;
+  tags: string[];
+  imageUrl: string;
+  githubUrl: string;
+  webpageUrl?: string; // <-- optional now
+};
 
 export default function Project({
    title,
