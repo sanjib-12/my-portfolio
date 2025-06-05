@@ -5,6 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import cinemaImg from "@/public/cinema.jpg";
 import chatImg from "@/public/chat.jpg";
 import ticketImg from "@/public/ticket.jpg";
+import djangoImg from "@/public/django-blog.jpg"
 
 import {
    SiHtml5,
@@ -103,7 +104,7 @@ export const projectsData = [
       tags: ["React", "Express", "MongoDB", "Node", "Redux", "JWT", "Stock.io"],
       imageUrl: chatImg,
       githubUrl: "https://github.com/sanjib-12/QuickChat",
-      webpageUrl: "www.google.com",
+      //webpageUrl: "www.google.com",
    },
    {
       title: "Ticketing Application",
@@ -122,7 +123,7 @@ export const projectsData = [
       ],
       imageUrl: ticketImg,
       githubUrl: "https://github.com/sanjib-12/ticketing",
-      webpageUrl: "www.google.com",
+      //webpageUrl: "www.google.com",
    },
    {
       title: "Movie-Server",
@@ -132,6 +133,15 @@ export const projectsData = [
       imageUrl: cinemaImg,
       githubUrl: "https://github.com/sanjib-12/Movie-Server",
       webpageUrl: "",
+   },
+   {
+      title: "Django-blog",
+      description:
+         "A Django-based server designed to handle the backend of a blog platform. It includes databases for users and posts. Users can register or log in and perform CRUD operations on blog entries.",
+      tags: ["Python", "Django", "Django ORM", "SQLite", "Django Auth", "HTML", "Bootstrap"],
+      imageUrl: djangoImg,
+      githubUrl: "https://github.com/sanjib-12/Django-blog.git",
+      //webpageUrl: "",
    },
 ] as const;
 
