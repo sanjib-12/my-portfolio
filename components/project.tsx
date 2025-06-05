@@ -11,12 +11,12 @@ import { projectsData } from "@/lib/data";
 
 // type ProjectProps = (typeof projectsData)[number];
 type ProjectProps = {
-  title: string;
-  description: string;
-  tags: string[];
-  imageUrl: StaticImageData | string;
-  githubUrl: string;
-  webpageUrl?: string; // <-- optional now
+   title: string;
+   description: string;
+   tags: readonly string[];
+   imageUrl: StaticImageData | string;
+   githubUrl: string;
+   webpageUrl?: string; // <-- optional now
 };
 
 export default function Project({
