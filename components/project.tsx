@@ -4,6 +4,8 @@ import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import type { StaticImageData } from "next/image";
+
 
 import { projectsData } from "@/lib/data";
 
@@ -12,7 +14,7 @@ type ProjectProps = {
   title: string;
   description: string;
   tags: string[];
-  imageUrl: string;
+  imageUrl: StaticImageData | string;
   githubUrl: string;
   webpageUrl?: string; // <-- optional now
 };
